@@ -1,4 +1,3 @@
-
 ## Pointnet2022ML
 
 ### 文件概述
@@ -10,7 +9,7 @@
   - reconstruct_fig：训练后的模型和原始数据图
     - 后缀为final：训练模型的预测分类结果
     - 后缀为groundtruth：原始数据图
-- testpath：参与模型预测输出预测分类结果对应的原始数据（包括16类物品各随机选取）
+- testpath：参与模型输出预测分类结果对应的原始数据（包括16类物品各随机选取）
 
 ### 运行方法
 
@@ -41,4 +40,11 @@ Error: failed to send plot to http://127.0.0.1:63342
 ```python
 Error: failed to send plot to http://127.0.0.1:63342
 ```
+
+### 参考
+
+- pointnet的源代码位于：[yanx27/Pointnet_Pointnet2_pytorch: PointNet and PointNet++ implemented by pytorch (pure python) and on ModelNet, ShapeNet and S3DIS. (github.com)](https://github.com/yanx27/Pointnet_Pointnet2_pytorch)
+
+- 在本训练中，采用的预处理h5数据集位于：[antao97/PointCloudDatasets: 3D point cloud datasets in HDF5 format, containing uniformly sampled 2048 points per shape. (github.com)](https://github.com/antao97/PointCloudDatasets)
+  - ps. h5数据集也可通过：txtTOh5file.py文件处理生成，在所提交的代码中，展示了将用于模型预测参与模型输出预测分类结果的原始数据转换到h5格式的一个示例。
 
